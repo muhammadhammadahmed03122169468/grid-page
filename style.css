@@ -1,0 +1,416 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    width: 100%;
+    height: 70px;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 2px 3px 9px rgb(71, 71, 199);
+
+
+
+}
+.zerologo{
+    display: none;
+}
+.onelogo {
+    font-size: 28px;
+    color: blue;
+}
+
+header a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px;
+    color: black;
+}
+
+.twologo
+ {
+    font-size: 28px;
+    color: blue;
+}
+h1{
+    font-size: 32px;
+    padding-top: 30px;  
+    padding-left: 8.5%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.sectio{
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+p{
+    font-size: 22px;
+    padding-top: 6px;  
+    padding-left: 8.5%;
+    font-weight: bold;
+}
+
+.main {
+    width: 100%;
+    height: 600px;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.item {
+    background-color: rgb(254, 255, 255);
+    /* border: 2px solid rgb(0, 0, 0); */
+}
+
+.grid {
+
+    height: 450px;
+    width: 850px;
+    display: grid;
+    gap: 10px;
+
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "one one two three"
+        "four five six six"
+
+
+}
+
+
+.one {
+    grid-area: one;
+    height: 180px;
+    background-image: linear-gradient(rgb(159, 208, 231), rgba(21, 218, 87, 0)), url(https://media.istockphoto.com/id/516401790/photo/coffee.jpg?s=612x612&w=0&k=20&c=cJ269wnUQN1cse0ZUmLIAh_gRzpzFt__iUHx9R2Q6g0=);
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: fixed;
+
+    border-radius:10px;
+   box-shadow: 5px 6px 4px 2px grey;
+   
+}
+
+.two {
+    grid-area: two;
+    height: 230px;
+background-image: linear-gradient(rgb(25, 25, 27), rgba(21, 218, 87, 0)), url(https://images.unsplash.com/photo-1506320775314-84c60bff00ff?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fHw%3D);
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius:10px; box-shadow: 5px 6px 4px 2px grey;
+   
+   
+}
+
+.three {
+    grid-area: three;
+    height: 230px;
+    background-image: linear-gradient(rgb(231, 179, 119), rgba(21, 218, 87, 0)), url(    https://images.unsplash.com/photo-1617069897015-7d27a76232ed?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8aGFuZHxlbnwwfHwwfHx8MA%3D%3D);
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius:10px; box-shadow: 5px 6px 4px 2px grey;
+}
+
+
+
+
+.four {
+    grid-area: four;
+    height: 230px;
+    margin-top: -50px;
+    background-image: linear-gradient(rgb(67, 84, 235), rgba(21, 218, 87, 0)), url(  https://media.istockphoto.com/id/1367190224/photo/young-homemade-ficus-elastica-with-big-dark-leaves-in-a-pot-on-a-white-background.jpg?s=1024x1024&w=is&k=20&c=ZpATccZ-tg2crjig_YeOCSB5Ok2oJBvMrrhNGgMqZWk=  );
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius:10px; box-shadow: 5px 6px 4px 2px grey;
+}
+
+.five {
+    grid-area: five;
+    height: 230px;
+    margin-top: -50px;
+    background-image: linear-gradient(rgb(204, 127, 150), rgba(21, 218, 87, 0)), url(  https://images.unsplash.com/photo-1498843053639-170ff2122f35?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius:10px; box-shadow: 5px 6px 4px 2px grey;
+}
+
+.six {
+    grid-area: six;
+    height: 180px;
+    margin-top: 00px;
+    background-image: linear-gradient(rgb(82, 183, 201), rgba(21, 218, 87, 0)), url(https://media.istockphoto.com/id/1411304340/photo/two-modern-buildings-with-glass-windows-architecture-design-of-buildings-office-space-houses.jpg?s=1024x1024&w=is&k=20&c=X00czG-Ij796TcbNr35aMv3m7oXkIJ5h0L7VN5q_BPA=);
+    background-position:end
+    ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius:10px; box-shadow: 5px 6px 4px 2px grey;
+}
+.t{
+    font-size: 12px;
+    padding-top: 20px;
+    padding-left: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: aliceblue;
+    
+ 
+}
+.b{ padding-top: 10px;
+    padding-left: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+color: aliceblue;}
+ .btn1{ margin-top: 60px;
+    margin-left: 20px;
+    font-weight: bold;
+    height: 30px;
+    border-radius: 10px;
+    width: 140px;
+    border: 2px solid rgb(50, 146, 201) ;
+    color: rgb(50, 146, 201);
+}
+ .btn2{ margin-top: 100px;
+    margin-left: 20px;
+    font-weight: bold;
+    height: 30px;
+    border-radius: 10px;
+    width: 140px;
+    border: 2px solid rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+}
+ .btn3{ margin-top: 100px;
+    margin-left: 20px;
+    font-weight: bold;
+    height: 30px;
+    border-radius: 10px;
+    width: 140px;
+    border: 2px solid rgb(94, 38, 17);
+    color: rgb(94, 38, 17);
+}
+ .btn4{ margin-top: 80px;
+    margin-left: 20px;
+    font-weight: bold;
+    height: 30px;
+    border-radius: 10px;
+    width: 140px;
+    border: 2px solid rgb(0,2,141);
+    color: rgb(0, 2, 141);
+}
+ .btn5{ margin-top: 100px;
+    margin-left: 20px;
+    font-weight: bold;
+    height: 30px;
+    border-radius: 10px;
+    width: 140px;
+    border: 2px solid rgb(201, 50, 70);
+    color: rgb(201, 50, 70);
+}
+ .btn6{ margin-top: 60px;
+    margin-left: 20px;
+    font-weight: bold;
+    height: 30px;
+    border-radius: 10px;
+    width: 140px;
+    border: 2px solid rgb(50, 146, 201);
+    color: rgb(50, 146, 201);
+}
+
+
+
+
+
+@media(max-width:760px){
+    .main {
+        width: 100%;
+        height: auto;
+        /* border: 2px solid black; */
+       
+        
+    
+    }
+    
+    .item {
+        background-color: rgb(254, 255, 255);
+        /* border: 2px solid rgb(0, 0, 0); */
+    }
+    
+    .grid {
+    
+        height: 450px;
+        width: 850px;
+        display: grid;
+        gap: 10px;
+    
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: "one two"
+            "three four " "five six"
+    
+    
+    }
+    .one {
+        grid-area: one;
+        height: 200px;
+        background-image: linear-gradient(rgb(159, 208, 231), rgba(21, 218, 87, 0)), url(https://media.istockphoto.com/id/516401790/photo/coffee.jpg?s=612x612&w=0&k=20&c=cJ269wnUQN1cse0ZUmLIAh_gRzpzFt__iUHx9R2Q6g0=);
+        background-position:center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: fixed;
+    
+        border-radius:10px;
+       box-shadow: 5px 6px 4px 2px grey;
+       
+    }
+    
+    .two {
+        grid-area: two;
+        height: 200px;
+    background-image: linear-gradient(rgb(25, 25, 27), rgba(21, 218, 87, 0)), url(https://images.unsplash.com/photo-1506320775314-84c60bff00ff?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fHw%3D);
+        background-position:center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius:10px; box-shadow: 5px 6px 4px 2px grey;
+       
+       
+    }
+    
+    .three {
+        grid-area: three;
+        height: 200px;
+        background-image: linear-gradient(rgb(231, 179, 119), rgba(21, 218, 87, 0)), url(    https://images.unsplash.com/photo-1617069897015-7d27a76232ed?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8aGFuZHxlbnwwfHwwfHx8MA%3D%3D);
+        background-position:center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius:10px; box-shadow: 5px 6px 4px 2px grey;
+    }
+    
+    
+    
+    
+    .four {
+        grid-area: four;
+        height: 200px;
+        background-image: linear-gradient(rgb(67, 84, 235), rgba(21, 218, 87, 0)), url(  https://media.istockphoto.com/id/1367190224/photo/young-homemade-ficus-elastica-with-big-dark-leaves-in-a-pot-on-a-white-background.jpg?s=1024x1024&w=is&k=20&c=ZpATccZ-tg2crjig_YeOCSB5Ok2oJBvMrrhNGgMqZWk=  );
+        background-position:center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius:10px; box-shadow: 5px 6px 4px 2px grey;
+        margin-top: -1px;
+    }
+    
+    .five {
+        grid-area: five;
+        height: 200px;
+        background-image: linear-gradient(rgb(204, 127, 150), rgba(21, 218, 87, 0)), url(  https://images.unsplash.com/photo-1498843053639-170ff2122f35?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+        background-position:center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius:10px; box-shadow: 5px 6px 4px 2px grey;
+        margin-top: 2px;
+      
+    }
+    
+    .six {
+        grid-area: six;
+        height: 200px;
+        background-image: linear-gradient(rgb(82, 183, 201), rgba(21, 218, 87, 0)), url(https://media.istockphoto.com/id/1411304340/photo/two-modern-buildings-with-glass-windows-architecture-design-of-buildings-office-space-houses.jpg?s=1024x1024&w=is&k=20&c=X00czG-Ij796TcbNr35aMv3m7oXkIJ5h0L7VN5q_BPA=);
+        background-position:end
+        ;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius:10px; box-shadow: 5px 6px 4px 2px grey;
+        margin-top: 0px;
+    } .btn1{ margin-top: 80px;
+        margin-left: 20px;
+        font-weight: bold;
+        height: 30px;
+        border-radius: 10px;
+        width: 140px;
+        border: 2px solid rgb(50, 146, 201) ;
+        color: rgb(50, 146, 201);
+    }
+     .btn2{ margin-top: 80px;
+        margin-left: 20px;
+        font-weight: bold;
+        height: 30px;
+        border-radius: 10px;
+        width: 140px;
+        border: 2px solid rgb(0, 0, 0);
+        color: rgb(0, 0, 0);
+    }
+     .btn3{ margin-top: 80px;
+        margin-left: 20px;
+        font-weight: bold;
+        height: 30px;
+        border-radius: 10px;
+        width: 140px;
+        border: 2px solid rgb(94, 38, 17);
+        color: rgb(94, 38, 17);
+    }
+     .btn4{ margin-top: 60px;
+        margin-left: 20px;
+        font-weight: bold;
+        height: 30px;
+        border-radius: 10px;
+        width: 140px;
+        border: 2px solid rgb(0,2,141);
+        color: rgb(0, 2, 141);
+    }
+     .btn5{ margin-top: 80px;
+        margin-left: 20px;
+        font-weight: bold;
+        height: 30px;
+        border-radius: 10px;
+        
+        border: 2px solid rgb(201, 50, 70);
+        color: rgb(201, 50, 70);
+    }
+     .btn6{ margin-top: 80px;
+        margin-left: 20px;
+        font-weight: bold;
+        height: 30px;
+        border-radius: 10px;
+       
+        border: 2px solid rgb(50, 146, 201);
+        color: rgb(50, 146, 201);
+    }.navbar{
+        display: none;
+    }.zerologo{
+        display: flex;
+        font-size: 28px;
+        color: blue;
+    }
+    
+    
+}
+@media(max-width:500px){
+    .grid {
+
+        height: 850px;
+        width: 850px;
+        display: grid;
+        gap: 10px;
+    
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas: "one" "two"
+        "three " "four"
+            " five" "  six"
+    
+    
+    }
+}
